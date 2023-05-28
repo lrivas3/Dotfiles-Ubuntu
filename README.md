@@ -48,7 +48,7 @@ Here are some details about my setup:
 
 To install with script:
 ```
-wget -qO- https://github.com/lrivas3/Dotfiles-Ubuntu.git/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/lrivas3/Dotfiles-Ubuntu/main/install.sh | bash
 ```
 
 ## :hammer: Manual configuration
