@@ -10,7 +10,7 @@ else
   echo "Git installation completed."
 fi
 
-BASE_DIR=~/Dotfiles/Dotfiles-Ubuntu/
+BASE_DIR=~/Dotfiles/Dotfiles-Ubuntu
 
 mkdir -p ~/.local/share/fonts/ && FONTS_DIR=~/.local/share/fonts/
 
@@ -27,13 +27,11 @@ sudo fc-cache -f -v
 echo "Setting up gitconfig file"
 ln -s $BASE_DIR/.gitconfig ~/
 
-echo "Copying zsh plugins to zsh directory"
-sudo cp $BASE_DIR/zsh/plugins /usr/share/zsh/
 
 echo "installing packages with apt"
 sudo apt install zsh curl ranger kitty neofetch cava fzf lsd bat nvm python3 python3-pip nala
 echo "Installing nvim"
-snap install nvim --classic
+sudo snap install nvim --classic
 echo "Installing config files for nvim"
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
 echo "Installing wezterm"
