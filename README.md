@@ -48,9 +48,10 @@ Here are some details about my setup:
 
 To install with script:
 ```
-curl -o- https://github.com/lrivas3/Dotfiles-Ubuntu.git/install.sh | bash
+wget -qO- https://github.com/lrivas3/Dotfiles-Ubuntu.git/install.sh | bash
 ```
 
+## :hammer: Manual configuration
 
 ### Required 
 
@@ -81,7 +82,7 @@ curl -o- https://github.com/lrivas3/Dotfiles-Ubuntu.git/install.sh | bash
 
 From apt
 ```
-sudo apt install zsh ranger kitty neofetch cava fzf lsd bat nvm python python-pip 
+sudo apt install zsh ranger curl kitty neofetch cava fzf lsd bat nvm python python-pip 
 ```
 From snap
 ```
@@ -90,6 +91,10 @@ snap install nvim --classic
 powerlevel10k
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+```
+wezterm
+```
+wget -P /tmp https://github.com/wez/wezterm/releases/download/20230408-112425-69ae8472/wezterm-20230408-112425-69ae8472.Ubuntu22.04.deb && sudo apt install /tmp/wezterm-20230408-112425-69ae8472.Ubuntu22.04.deb && rm /tmp/wezterm-20230408-112425-69ae8472.Ubuntu22.04.deb
 ```
 
 </details>
@@ -111,7 +116,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 
 </details>
 
-### :hammer: Manual configuration
+**To continue with the manual configuration:**
 
 ```
 #clone the repository
