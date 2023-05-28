@@ -44,6 +44,14 @@ Here are some details about my setup:
 
 ## :wrench: ‎ <samp>Setup</samp>
 
+### Install script
+
+To install with script:
+```
+curl -o- https://github.com/lrivas3/Dotfiles-Ubuntu.git/install.sh | bash
+```
+
+
 ### Required 
 
 **The following packages are required for the enviroment**
@@ -103,7 +111,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 
 </details>
 
-## :hammer: ‎ Set up the configs
+### :hammer: Manual configuration
 
 ```
 #clone the repository
@@ -116,8 +124,7 @@ cp -r config/* ~/.config/
 
 # copy the files meant to be at the home folder, like .zshrc and stuff 
 
-cp -r misc ~/
-
+# Well I think you know what you're doing
 ```
  
 Thanks for stopping by and enjoy the dots.
