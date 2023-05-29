@@ -14,7 +14,7 @@ fi
 
 BASE_DIR=~/Dotfiles/Dotfiles-Ubuntu
 
-mkdir -p ~/.local/share/fonts/ && FONTS_DIR=~/.local/share/fonts
+mkdir -p ~/.local/share/fonts/
 
 echo "Copying config files to desired destination"
 echo "Copying zsh files"
@@ -23,9 +23,8 @@ ln -s $BASE_DIR/.zsh ~/.zsh
 echo "Setting up terminals configs"
 ln -s $BASE_DIR/config/kitty ~/.config/kitty
 ln -s $BASE_DIR/config/wezterm ~/.config/wezterm
-echo "Copying and reloading fonts"
-ln -s $BASE_DIR/fonts $FONTS_DIR/
-sudo fc-cache -f -v
+
+
 echo "Setting up gitconfig file"
 ln -s $BASE_DIR/.gitconfig ~/
 
