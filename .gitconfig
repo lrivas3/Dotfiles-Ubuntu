@@ -5,7 +5,6 @@
         name = leonardo
 [core]
         editor = nvim
-	      pager = diff-so-fancy | less --tabs=4 -RFX
 [alias]
   a = "!git status --short | peco | awk '{print $2}' | xargs git add"
   d = diff
